@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Federo&family=Goldman&display=swap');
+
+body {
+    font-family: 'Goldman', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./img/tajkep4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    
+}
+
+#box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80%;
+    width: 50vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+    transition: all 0.5s;
+    color: white;
+}
+
+#box:hover {
+    background-color: rgba(0, 0, 200, 0.4);
+}
+
+#azonosito,
+#alkalmazottnev,
+#reszleg,
+#szam,
+#osszeg,
+#belepes_eve {
+    width: 45vh;
+    height: 4vh;
+    color: black;
+}
+
+#azonosito:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    font-size: 2.2vh;
+    color: white;
+}
+
+#azonosito:hover::placeholder {
+    color: white;
+}
+
+#alkalmazottnev:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    font-size: 2.2vh;
+    color: white;
+}
+
+#alkalmazottnev:hover::placeholder {
+    color: white;
+}
+
+#reszleg:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    font-size: 2.2vh;
+    color: white;
+}
+
+#reszleg:hover::placeholder {
+    color: white;
+}
+
+#belepes_eve:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    font-size: 2.2vh;
+    color: white;
+}
+
+#belepes_eve:hover::placeholder {
+    color: white;
+}
+
+#osszeg:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    font-size: 2.2vh;
+    color: white;
+}
+
+#osszeg:hover::placeholder {
+    color: white;
+}
+input[type="radio"] {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 50px;
+    height: 20px;
+    outline: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: -5px -5px 20px rgba(255, 255, 255, 0.3),
+        5px 5px 10px rgba(0, 0, 0, 1),
+        inset -2px -2px 5px rgba(255, 255, 255, 0.3),
+        inset 2px 2px 5px rgba(0, 0, 0, 0.5),
+        0 0 0 2px #1f1f1f;
+    transition: 0.5s;
+}
+
+input[type="radio"]:checked {
+    background: #20b7ff;
+}
+
+input[type="radio"]::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 20px;
+    background: linear-gradient(to top, #000, #555);
+    border-radius: 20px;
+    box-shadow: 0 0 0 1px #232323;
+    transform: scale(0.98, 0.96);
+    transition: 0.5s;
+}
+
+input[type="radio"]:checked::before {
+    left: 20px;
+}

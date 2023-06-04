@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bérek</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js"
+        integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css"
+        integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="box">
+        <h1>Bérek</h1>
+        <div class="mb-4">
+            <input id="azonosito" type="text" required="required" placeholder="Id">
+        </div>
+        <div class="mb-4">
+            <input id="alkalmazottnev" type="text" required="required" placeholder="Alkalmazott neve">
+        </div>
+        <div class="mb-4">
+            <input label="Férfi" type="radio" id="male" name="gender" value="male" checked>Férfi
+            <input class="mt-2" label="Nő" type="radio" id="female" name="gender" value="female">Nő
+        </div>
+        <div class="mb-5">
+            <h5>Részleg</h5>
+            <select id="reszleg">
+                <option selected>Részleg</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+            </select>
+        </div>
+        <div class="mt-5" >
+            <h5>Belépés éve</h5>
+            <input id="belepes_eve" class="mb-5" id="szam" type="number" min="1900" step="5" value="2000">
+        </div>
+        <div class="mt-5">
+            <h5>Havi alapbér</h5>
+            <input id="osszeg" type="number" min="150000" step="10000" value="200000">
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
